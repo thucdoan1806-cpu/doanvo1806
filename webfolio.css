@@ -1,0 +1,470 @@
+@charset "utf-8";
+
+:root {
+	--ink: #20242a;
+	--paper: #f4f5f7;
+	--muted: #9da3ad;
+	--red: #e14b4f;
+	--yellow: #e4b93f;
+	--cyan: #63c7d2;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background: #fff;
+	color: var(--ink);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.container {
+	max-width: 1080px;
+	width: 100%;
+	padding-left: 28px;
+	padding-right: 28px;
+}
+
+.header,
+.content,
+.portfolio,
+.footer {
+	background: var(--ink) !important;
+}
+
+.header {
+	min-height: 116px;
+	color: var(--paper);
+}
+
+.header > .container {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.row {
+	align-items: center;
+}
+
+.logo img {
+	display: block;
+	width: 120px;
+	max-width: 100%;
+	height: 60px;
+	object-fit: contain;
+}
+
+.navbar {
+	height: auto;
+	justify-content: center;
+}
+
+.navbar ul {
+	width: 100%;
+	margin: 0;
+	padding: 0 !important;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 28px;
+	background: transparent !important;
+	color: var(--paper) !important;
+}
+
+.navbar li {
+	width: auto !important;
+	height: auto !important;
+	font-size: 15px;
+	letter-spacing: .04em;
+}
+
+.navbar li a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.navbar li a:hover {
+	color: var(--yellow);
+}
+
+.button {
+	height: auto;
+	justify-content: flex-end;
+}
+
+.getintouch,
+.contactme,
+.scrolldown {
+	border: 0;
+	padding: 11px 20px;
+	font-size: 14px;
+	letter-spacing: .03em;
+	background: var(--paper) !important;
+	color: var(--ink) !important;
+}
+
+.getintouch:hover,
+.contactme:hover,
+.scrolldown:hover {
+	background: var(--yellow) !important;
+}
+
+.content {
+	color: var(--paper);
+}
+
+.content > .container {
+	padding-top: 64px;
+	padding-bottom: 76px;
+}
+
+.content1,
+.content2 {
+	min-height: 420px;
+}
+
+.iam,
+.ThucDoan,
+.girl,
+.intro {
+	max-width: 440px;
+	width: 100%;
+}
+
+.iam {
+	font-size: clamp(42px, 6vw, 72px);
+	margin-bottom: 18px;
+}
+
+.ThucDoan {
+	font-size: clamp(40px, 5vw, 66px);
+	line-height: 1;
+}
+
+.girl {
+	font-size: clamp(22px, 3vw, 34px);
+	line-height: 1.15;
+}
+
+.intro {
+	color: var(--muted) !important;
+	line-height: 1.8;
+}
+
+.portrait {
+	width: min(100%, 280px);
+	aspect-ratio: 3 / 4;
+	overflow: hidden;
+	background: var(--paper) !important;
+}
+
+.portrait img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.resume {
+	background: var(--paper) !important;
+}
+
+.resume > .container {
+	padding-top: 72px;
+	padding-bottom: 72px;
+}
+
+.headerresume,
+.head h1 {
+	font-size: clamp(34px, 5vw, 58px);
+	letter-spacing: .04em;
+}
+
+.resumecontent {
+	gap: 20px 0;
+}
+
+.resume1,
+.resume2 {
+	min-height: 420px;
+}
+
+.Edu,
+.Tech,
+.Language,
+.passion {
+	min-height: 52px;
+	padding: 8px 22px;
+	background: var(--ink) !important;
+}
+
+.studyyear {
+	gap: 12px;
+}
+
+.year,
+.arena,
+.vietnamese,
+.english {
+	min-height: 48px;
+	padding: 12px 18px;
+	background: #747b85 !important;
+}
+
+.skills {
+	width: 100%;
+	max-width: 420px;
+	gap: 12px;
+	padding: 0;
+	list-style: none;
+}
+
+.skills li {
+	min-width: 58px;
+	min-height: 50px;
+	padding: 8px 12px;
+	background: #747b85 !important;
+	overflow: hidden;
+}
+
+.skills li img {
+	display: block;
+	width: 36px;
+	height: 36px;
+	object-fit: contain;
+}
+
+.techskills {
+	font-size: 20px;
+}
+
+.section-1 > .container {
+	padding: 0;
+}
+
+.box1,
+.box2,
+.box3 {
+	min-height: 150px;
+	transition: filter .2s ease;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover {
+	filter: brightness(.88);
+}
+
+.portfolio > .container {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.head {
+	background: transparent !important;
+}
+
+.carousel {
+	width: min(100%, 860px);
+	margin-left: auto;
+	margin-right: auto;
+	background: #30353d !important;
+}
+
+.carousel-item img {
+	display: block;
+	width: 100%;
+	height: min(42vw, 380px);
+	min-height: 180px;
+	object-fit: contain;
+}
+
+.myblog {
+	background: var(--paper);
+}
+
+.blog {
+	padding-top: 72px;
+	padding-bottom: 72px;
+}
+
+.blog-content1,
+.blog-content2 {
+	min-height: 360px;
+}
+
+.me2 {
+	display: block;
+	width: min(100%, 320px);
+	height: auto;
+	object-fit: contain;
+}
+
+.articles {
+	max-width: 420px;
+	font-size: clamp(26px, 3vw, 40px);
+}
+
+.frame {
+	max-width: 460px;
+	line-height: 1.7;
+}
+
+.footer {
+	color: var(--paper);
+}
+
+.footer > .container {
+	padding-top: 52px;
+	padding-bottom: 26px;
+}
+
+.icon img {
+	display: block;
+	width: 64px;
+	height: 64px;
+	object-fit: cover;
+}
+
+.name {
+	font-size: clamp(22px, 4vw, 42px);
+}
+
+.social hr {
+	width: 100%;
+	border-color: var(--paper);
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.header > .container {
+		padding-top: 18px;
+		padding-bottom: 18px;
+	}
+
+	.logo img {
+		width: 100px;
+		height: 50px;
+		margin: 0 auto;
+	}
+
+	.navbar,
+	.button {
+		width: 100%;
+		margin-top: 16px;
+		justify-content: center;
+	}
+
+	.navbar ul {
+		flex-wrap: wrap;
+		gap: 14px 20px;
+	}
+
+	.content1,
+	.content2,
+	.resume1,
+	.resume2,
+	.blog-content1,
+	.blog-content2 {
+		min-height: 0;
+	}
+
+	.content2 {
+		padding: 12px 20px 0;
+	}
+
+	.carousel-item img {
+		height: 240px;
+		min-height: 0;
+	}
+
+	.contacts {
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.logo img {
+	display: block;
+	width: 120px;
+	max-width: 100%;
+	height: 60px;
+	object-fit: contain;
+}
+
+.portrait {
+	width: min(100%, 280px);
+	aspect-ratio: 3 / 4;
+	overflow: hidden;
+}
+
+.portrait img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.skills li {
+	overflow: hidden;
+}
+
+.skills li img {
+	display: block;
+	width: 36px;
+	height: 36px;
+	object-fit: contain;
+}
+
+.carousel-item img {
+	display: block;
+	width: 100%;
+	height: min(42vw, 380px);
+	min-height: 180px;
+	object-fit: contain;
+}
+
+.me2 {
+	display: block;
+	width: min(100%, 320px);
+	height: auto;
+	object-fit: contain;
+}
+
+.icon img {
+	display: block;
+	width: 64px;
+	height: 64px;
+	object-fit: cover;
+}
+
+@media (max-width: 768px) {
+	.logo img {
+		width: 100px;
+		height: 50px;
+		margin: 0 auto;
+	}
+
+	.carousel-item img {
+		height: 240px;
+		min-height: 0;
+	}
+}
